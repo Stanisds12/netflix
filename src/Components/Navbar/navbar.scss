@@ -1,0 +1,35 @@
+.navbar {
+    color: white;
+    .container-fluid {
+        a {
+            max-width: 8%;
+            img {
+                max-width: 100%;
+            }
+        }
+        #navbarNavDropdown {
+            margin-left: 40px;
+            ul {
+                li {
+                    a {
+                        margin-right: 20px;
+                        color: white;
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .rr {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.sinColor {
+    background: linear-gradient(rgba(158, 114, 114, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.colorChange {
+    background-color: rgb(20, 20, 20);
+}
