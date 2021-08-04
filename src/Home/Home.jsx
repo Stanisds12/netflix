@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Components/Footer/Footer';
 import MovieList from '../Components/MovieList/MovieList';
 import Navbar from '../Components/Navbar/Navbar';
 import Slider from '../Components/SlidePrincipal/Slider';
@@ -9,7 +10,8 @@ const Home = () => {
         <div className="home">
             <Navbar />
             <Slider />
-            <MovieList/>
+            <MovieList />
+            <Footer/>
         </div>
     );
 }

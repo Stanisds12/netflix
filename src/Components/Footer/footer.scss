@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(NetflixSansMedium.ttf);
+}
+
+.navbar {
+    background: #141414;
+    .container {
+        color: #808080;
+        font-family: 'Netflix Sans';
+        .princ {
+            width: inherit;
+            font-size: 13px;
+        }
+        .footer-bottom {
+            font-size: 11px;
+        }
+    }
+}
