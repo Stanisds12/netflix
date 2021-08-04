@@ -1,3 +1,4 @@
+@import '../../app.scss';
 $itemGrow: 1.2;
 $duration: 250ms;
 html {
@@ -18,13 +19,38 @@ h1 {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 100%);
+    grid-template-rows: repeat(1, auto);
     overflow: hidden;
     scroll-behavior: smooth;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    .arrow {
+        position: absolute;
+        color: white;
+        margin-top: 6%;
+        &.fa-chevron-left {
+            left: 30px;
+            cursor: pointer;
+            @include mobile {
+                left: 0;
+                font-size: 40px !important;
+                margin-top: 30%;
+            }
+        }
+        &.fa-chevron-right {
+            right: 30px;
+            cursor: pointer;
+            @include mobile {
+                right: 0;
+                font-size: 40px !important;
+                margin-top: 30%;
+            }
+        }
+    }
     section {
         width: 100%;
         position: relative;
         display: grid;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(12, auto);
         margin: 20px 0;
         .item {
             position: relative;
@@ -34,12 +60,12 @@ h1 {
                 margin: 0 40px;
                 transform: scale(1.2);
             }
-            .heading {
+            /*.heading {
                 position: absolute;
                 bottom: 20px;
                 left: 20px;
                 color: #fff;
-            }
+            }*/
             .duration {
                 position: absolute;
                 bottom: 0;
